@@ -1,0 +1,76 @@
+.frame{
+    width: 320px;
+    height: 230px;
+    border: 3px solid darkblue;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 100px;
+    float:left;
+}
+
+.buttonSeting{
+    width: 220px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: gold;
+    border: 1px solid gold;
+    font-size: 35px;
+    font-weight: bold;
+    color:darkblue;
+}
+.inputMax{
+    width: 120px;
+    height: 40px;
+    border: 3px solid gold;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: gold;
+    font-size: 30px;
+}
+.inputMaxError{
+    width: 120px;
+    height: 40px;
+    border: 3px solid red;
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: red;
+    font-size: 30px;
+}
+.inputMin{
+    width: 120px;
+    height: 40px;
+    border: 3px solid gold;
+    border-radius: 7px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: gold;
+    font-size: 30px;
+}
+.inputMinError{
+    width: 120px;
+    height: 40px;
+    border: 3px solid red;
+    border-radius: 7px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: red;
+    font-size: 30px;
+}
+
+
+.max{
+    color: darkblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 45px;
+}
+.min{
+    color: darkblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 45px;
+}
