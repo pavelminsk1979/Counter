@@ -11,7 +11,7 @@
 .text{
  font-size: 38px;
  font-weight: bold;
- color: darkblue;
+ color: red;
  margin-left: 60px;
 }
 
@@ -56,4 +56,28 @@ font-size: 120px;
  font-size: 30px;
  font-weight: bold;
  color:darkblue;
+}
+
+.imgError img{
+ height: 150px;
+ width: 200px;
+ border-radius: 15px;
+ margin-left: 60px;
+ margin-top: 5px;
+
+}
+
+.imgThree img{
+ height: 140px;
+ width: 140px;
+ border-radius: 50px;
+ margin-left: 80px;
+ margin-top: 5px;
+}
+.imgOne img{
+ height: 180px;
+ width: 270px;
+ border-radius: 50px;
+ margin-left: 20px;
+
 }

@@ -9,21 +9,30 @@ export type CounterType = {
     max: number
     text: boolean
     error:boolean
+    one:string
+    three:string
+    imgError:string
 }
 
-export function Counter({text, max, number, resetZero, addOne,error}: CounterType) {
+export function Counter(
+    {text, max, number, resetZero, addOne,error,one,three,imgError}: CounterType) {
+
 
     return (
         <div className={st.frame}>
             <div className={st.scrin}>
 
-                {error&&<div>error</div>}
+                {error&&<div className={st.imgError}><img src={imgError}/></div>}
 
-                {text === false && !error&&<div className={number === max ? st.numberRed : st.number}>
+                {text === false && !error&& number!==3&& number!==1&&<div className={number === max ? st.numberRed : st.number}>
                     {number}</div>}
 
-                {text && !error&&<div className={st.text}>Dear user please click
+                {text && !error&& <div className={st.text}>Dear user please click
                     settings!</div>}
+
+                {number===3&& !error&& !text&& <div className={st.imgThree}><img src={three}/></div>}
+
+                {number===1&& !error&& !text&& <div className={st.imgOne}><img src={one}/></div>}
 
             </div>
             <Button
