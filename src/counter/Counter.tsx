@@ -36,9 +36,11 @@ export function Counter(
 
             </div>
             <Button
-                className={st.butGo}
+                disabled={number===max}
+                className={number===max?st.disabledButGo:st.butGo}
                 calback={addOne} name={'GO'}/>
             <Button
+                disabled={false}
                 className={st.butReset}
                 calback={resetZero} name={'RESET'}/>
         </div>

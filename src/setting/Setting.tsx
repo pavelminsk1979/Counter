@@ -9,11 +9,12 @@ export type SettingType = {
     changeInputMax:(max:number)=>void
     clickSetting:()=>void
     error:boolean
+    number:number
 
 }
 
 export function Setting(
-    {min,changeInputMin,max,changeInputMax,clickSetting,error}: SettingType) {
+    {min,changeInputMin,max,changeInputMax,clickSetting,error,number}: SettingType) {
 
     return (
         <div className={st.frame}>
@@ -33,7 +34,8 @@ export function Setting(
             </div>
 
             <Button
-                className={st.buttonSeting}
+                disabled={number === max}
+                className={number === max ? st.disabledButton : st.buttonSeting}
                 name={'SETTINGS'}
                 calback={clickSetting}/>
         </div>

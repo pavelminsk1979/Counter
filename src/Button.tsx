@@ -2,11 +2,15 @@ export type ButtonType={
     name:string
     calback:()=>void
     className:string
+    disabled:boolean
 
 }
 export function Button (props:ButtonType) {
+    console.log('disabled', props.disabled)
     return(
-        <button className={props.className}
+        <button
+            disabled={props.disabled}
+            className={props.className}
             onClick={props.calback} >{props.name}</button>
     )
 }
