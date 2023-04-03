@@ -6,7 +6,6 @@ export type ButtonType={
 
 }
 export function Button (props:ButtonType) {
-    console.log('disabled', props.disabled)
     return(
         <button
             disabled={props.disabled}

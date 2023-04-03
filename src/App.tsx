@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import {Counter} from "./counter/Counter";
 import {Setting} from "./setting/Setting";
+import st from "./App.module.css";
 
 
 function App() {
@@ -76,7 +77,7 @@ useEffect(()=>{
 
     return (
 
-        <div>
+        <div className={st.main}>
             <div>
                 <Setting
                     number={number}
